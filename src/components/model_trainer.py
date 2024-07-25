@@ -8,7 +8,6 @@ from sklearn.ensemble import (
     RandomForestRegressor  
 )
 
-from catboost import CatBoostRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeRegressor
@@ -42,7 +41,6 @@ class ModelTrainer:
                 "Random Forest Regression": RandomForestRegressor(),
                 "Gradient Boosting Regression": GradientBoostingRegressor(),
                 "AdaBoost Regression": AdaBoostRegressor(),
-                "Catboost Regression": CatBoostRegressor(verbose=False),
                 "XGB Regression": XGBRegressor()
             }
 
